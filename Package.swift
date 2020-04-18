@@ -29,6 +29,19 @@ import PackageDescription
 
 let package = Package(
     name: "FSPagerView",
+    platforms: [
+       .iOS(.v9),
+    ],
     dependencies : [],
-    exclude: []
+    products: [
+        .library(
+            name: "FSPagerView", 
+            targets: ["FSPagerView"]),
+    ],
+    targets: [
+        .target(
+            name: "FSPagerView", 
+            dependencies: [],
+            path: "Sources"),
+    ]
 )
